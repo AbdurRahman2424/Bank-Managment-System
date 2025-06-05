@@ -3,6 +3,7 @@ C++ Banking Management System
 This is a simple, command-line Banking Management System developed in C++. It offers essential banking functionalities for managing customer accounts, including creation, modification, deletion, and financial transactions like deposits and withdrawals. The system uses binary files for robust data persistence and secures sensitive operations with a master key.
 
 ✨ Features
+
 Robust Master Key Management: The system employs a dedicated master key to safeguard sensitive operations such as viewing all customer data and changing the master key itself. This key is stored persistently in a binary file (MasterKey.dat), ensuring it survives program restarts.
 Comprehensive Customer Account Operations:
 Create New Account: Add new customer accounts, ensuring each account is assigned a unique ID (referred to as "Pin Code" in the code). The system checks for duplicate IDs to maintain data integrity.
@@ -14,7 +15,10 @@ Essential Financial Transactions:
 Deposit Funds: Allows customers to add money to their accounts, updating the balance instantly in the persistent storage.
 Withdraw Funds: Enables customers to withdraw money from their accounts, with the balance being updated in the data file.
 Binary File Storage for Persistence: All customer account data and the master key are stored efficiently and persistently in binary files (Bankdata.dat and MasterKey.dat respectively). This ensures that all information remains intact even after the program is closed, providing a reliable data storage solution.
+
+
 📁 Project Structure
+
 The project is structured using object-oriented programming principles, making it modular and extensible:
 
 main.cpp: This is the application's entry point. It displays the main menu, takes user input for navigation, and calls the appropriate member functions of the Binary class to perform banking operations.
